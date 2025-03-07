@@ -1,17 +1,24 @@
 #wrapper {
-    background-color: rosybrown;
-    grid-column: 2 / -2;
     display: grid;
     grid-template-columns: repeat(2, 120px) 220px 560px 220px repeat(2, 120px);
     grid-template-rows: 120px 360px 180px 340px 120px 340px 40px 100px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+body {
+    background-color: rosybrown;
+    grid-column: 2 / -2;
+}
 nav { 
     background-color: blue;
     grid-column: 2 / 3;
     grid-row: 2 / 7;
 } 
+.test {
+    background-color: blue;
+    grid-column: 6 / 7;
+    grid-row: 1 / -2;
+}
 header {
     background-color: pink;
     grid-column: 3 / 6;
