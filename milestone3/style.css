@@ -1,7 +1,7 @@
 #wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 120px) 220px 560px 220px repeat(2, 120px);
-    grid-template-rows: 120px 360px 180px 340px 120px 340px 40px 100px;
+    grid-template-columns: repeat(2, 120px) 500px 460px 500px repeat(2, 120px);
+    grid-template-rows: 120px 360px 180px 340px 70px 390px 40px 100px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -35,24 +35,30 @@ header {
     grid-row: 2 / 3;
 }
 .description {
-    background-color: blueviolet;
+    background-color: royalblue;
     grid-column: 3 / 4;
     grid-row: 4 / 5;
+    border-left: 50px solid rosybrown;
 }
 .motto {
-    background-color: red;
+    background-color: royalblue;
     grid-column: 5 / 6;
     grid-row: 4 / 5;
+    border-right: 50px solid rosybrown;
 }
 .project1 {
-    background-color: yellow;
+    background-color: royalblue;
     grid-column: 3 / 4;
     grid-row: 6 / 7;
+    border-left: 50px solid rosybrown;
+    border-bottom: 50px solid rosybrown;
 }
 .project2 {
-    background-color: green;
+    background-color: royalblue;
     grid-column: 5 / 6;
     grid-row: 6 / 7;
+    border-right: 50px solid rosybrown;
+    border-bottom: 50px solid rosybrown;
 }
 footer {
     background-color: orange;
