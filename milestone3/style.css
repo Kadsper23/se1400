@@ -6,14 +6,19 @@
     grid-row-gap: 0px;
 }
 body {
-    background-color: rosybrown;
+    background-color: rgb(15, 48, 75);
     grid-column: 2 / -2;
 }
-nav { 
+nav {
     background-color: blue;
     grid-column: 2 / 3;
     grid-row: 2 / 7;
 } 
+a:link {
+    color : purple;
+    text-decoration: none;
+
+}
 .test {
     background-color: blue;
     grid-column: 6 / 7;
@@ -38,27 +43,27 @@ header {
     background-color: royalblue;
     grid-column: 3 / 4;
     grid-row: 4 / 5;
-    border-left: 50px solid rosybrown;
+    border-left: 50px solid rgb(15, 48, 75);
 }
 .motto {
     background-color: royalblue;
     grid-column: 5 / 6;
     grid-row: 4 / 5;
-    border-right: 50px solid rosybrown;
+    border-right: 50px solid rgb(15, 48, 75);
 }
 .project1 {
     background-color: royalblue;
     grid-column: 3 / 4;
     grid-row: 6 / 7;
-    border-left: 50px solid rosybrown;
-    border-bottom: 50px solid rosybrown;
+    border-left: 50px solid rgb(15, 48, 75);
+    border-bottom: 50px solid rgb(15, 48, 75);
 }
 .project2 {
     background-color: royalblue;
     grid-column: 5 / 6;
     grid-row: 6 / 7;
-    border-right: 50px solid rosybrown;
-    border-bottom: 50px solid rosybrown;
+    border-right: 50px solid rgb(15, 48, 75);
+    border-bottom: 50px solid rgb(15, 48, 75);
 }
 footer {
     background-color: orange;
