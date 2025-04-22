@@ -42,6 +42,8 @@ nav a {
     padding: 1rem 0rem;
     display: block;
     text-align: center;
+    transition: background-color 0.5s;
+    transition-timing-function: ease-out;
 }
 nav a:hover {
     background-color: #BA1C21;
@@ -196,6 +198,12 @@ label {
         width: 100%;
         height: auto;
         padding-left: 0px;
+    }
+    video {
+        float: none;
+        margin: 0;
+        width: 100%;
+        height: auto;
     }
 }
 
