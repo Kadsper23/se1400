@@ -14,6 +14,25 @@ nav {
     grid-column: 2 / 3;
     grid-row: 2 / 7;
 } 
+.left-nav {
+    grid-column: 2 / 3;
+    grid-row: 2 / 7;
+    background-color: #1F2833;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.right-nav {
+    grid-column: 6 / 7;
+    grid-row: 2 / 7;
+    background-color: #1F2833;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
 p {
     text-align: center;
 }
@@ -27,11 +46,6 @@ a:link {
     color : purple;
     text-decoration: none;
 
-}
-.test {
-    background-color: blue;
-    grid-column: 6 / 7;
-    grid-row: 1 / -2;
 }
 header {
     background-color: royalblue;
