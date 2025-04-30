@@ -9,7 +9,7 @@
     grid-row-gap: 0px;
 }
 body {
-    background-color: #0B0C10;
+    background-color: #0A0A0A;
     grid-column: 2 / -2;
 }
 nav {
@@ -39,6 +39,9 @@ nav {
 p {
     text-align: center;
 }
+div p {
+    padding: 1px 10px 1px 10px;
+}
 h1 {
     color: black;
     font-family: georgia;
@@ -58,6 +61,9 @@ header {
     grid-column: 3 / 6;
     grid-row: 1 / 2;
 }
+div header {
+    margin: 5px;
+}
 .logo {
     background-color: yellowgreen;
     grid-column: 2 / 3;
@@ -75,30 +81,35 @@ header {
 }
 .description {
     background-color: #0A0A0A;
-    
+    margin-left: 40px;
     grid-column: 3 / 4;
     grid-row: 4 / 5;
-    border-left: 50px solid rgb(15, 48, 75);
+    border: #FF7043 solid 5px;
+    
 }
 .motto {
-    background-color: royalblue;
+    margin-right: 40px;
     grid-column: 5 / 6;
     grid-row: 4 / 5;
-    border-right: 50px solid rgb(15, 48, 75);
+    border: #FF7043 solid 5px;
+   
 }
 .project1 {
-    background-color: royalblue;
+    padding-left: 40px;
+    padding-bottom: 40px;
     grid-column: 3 / 4;
     grid-row: 6 / 7;
-    border-left: 50px solid rgb(15, 48, 75);
-    border-bottom: 50px solid rgb(15, 48, 75);
+    
+}
+.project1 h1 {
+    padding: 5px 5px 5px 5px;
 }
 .project2 {
-    background-color: royalblue;
+    padding-right: 40px;
+    padding-bottom: 40px;
     grid-column: 5 / 6;
     grid-row: 6 / 7;
-    border-right: 50px solid rgb(15, 48, 75);
-    border-bottom: 50px solid rgb(15, 48, 75);
+    
 }
 footer {
     background-color: rgb(104, 8, 5);
