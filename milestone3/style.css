@@ -3,14 +3,19 @@
 }
 #wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 120px) 500px 460px 500px repeat(2, 120px);
+    grid-template-columns: 1fr 120px 500px 460px 500px 120px 1fr;
     grid-template-rows: 120px 360px 180px 340px 70px 390px 40px 100px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 body {
     background-color: #0A0A0A;
-    grid-column: 2 / -2;
+    grid-column: 1 / -1;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 nav {
     background-color: #FF7043;
@@ -18,7 +23,7 @@ nav {
     grid-row: 2 / 7;
 } 
 .left-nav {
-    grid-column: 2 / 3;
+    grid-column: 1 / 3;
     grid-row: 2 / 7;
     background-color: #1F2833;
     display: flex;
@@ -27,7 +32,7 @@ nav {
     padding-top: 20px;
 }
 .right-nav {
-    grid-column: 6 / 7;
+    grid-column: 7 / 8;
     grid-row: 2 / 7;
     background-color: #1F2833;
     display: flex;
@@ -58,7 +63,7 @@ header {
     text-align: center;
     font-family: georgia;
     font-size: 30px;
-    grid-column: 3 / 6;
+    grid-column: 3 / 4;
     grid-row: 1 / 2;
 }
 div header {
@@ -66,7 +71,7 @@ div header {
 }
 .logo {
     background-color: yellowgreen;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
 .reverselogo {
@@ -76,7 +81,7 @@ div header {
 }
 .banner {
     background-color: #C62A2A;
-    grid-column: 3 / 6;
+    grid-column: 2 / 4;
     grid-row: 2 / 3;
 }
 .description {
@@ -95,20 +100,22 @@ div header {
    
 }
 .project1 {
-    padding-left: 40px;
-    padding-bottom: 40px;
+    margin-left: 40px;
+    margin-bottom: 40px;
     grid-column: 3 / 4;
     grid-row: 6 / 7;
+    border: #FF7043 solid 5px;
     
 }
 .project1 h1 {
     padding: 5px 5px 5px 5px;
 }
 .project2 {
-    padding-right: 40px;
-    padding-bottom: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
     grid-column: 5 / 6;
     grid-row: 6 / 7;
+    border: #FF7043 solid 5px;
     
 }
 footer {
