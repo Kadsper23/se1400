@@ -3,7 +3,7 @@
 }
 #wrapper {
     display: grid;
-    grid-template-columns: 1fr 120px 500px 460px 500px 120px 1fr;
+    grid-template-columns: 1fr 120px 500px 420px 500px 120px 1fr;
     grid-template-rows: 120px 360px 180px 340px 70px 390px 40px 100px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -32,13 +32,19 @@ nav {
     padding-top: 20px;
 }
 .right-nav {
-    grid-column: 7 / 8;
+    grid-column: 6 / 8;
     grid-row: 2 / 7;
     background-color: #1F2833;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+}
+.nav-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
 }
 
 p {
@@ -60,28 +66,28 @@ a:link {
 }
 header {
     background-color: #F44336;
+    color: black;
     text-align: center;
+    font-weight: bold;
     font-family: georgia;
     font-size: 30px;
-    grid-column: 3 / 4;
+    grid-column: 3 / 6;
     grid-row: 1 / 2;
 }
 div header {
     margin: 5px;
 }
 .logo {
-    background-color: yellowgreen;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
 .reverselogo {
-    background-color: yellowgreen;
-    grid-column: 6 / 7;
+    grid-column: 7 / 8;
     grid-row: 1 / 2;
 }
 .banner {
     background-color: #C62A2A;
-    grid-column: 2 / 4;
+    grid-column: 3 / 6;
     grid-row: 2 / 3;
 }
 .description {
@@ -92,12 +98,23 @@ div header {
     border: #FF7043 solid 5px;
     
 }
+.description p {
+    color: lightgray;
+}
+.nav-img:hover {
+    animation: shake 0.8s infinite;
+  }
 .motto {
     margin-right: 40px;
     grid-column: 5 / 6;
     grid-row: 4 / 5;
     border: #FF7043 solid 5px;
    
+}
+.motto p {
+    color: lightgray;
+    font-size: 20px;
+    padding: 80px 20px 40px 20px;
 }
 .project1 {
     margin-left: 40px;
@@ -106,6 +123,9 @@ div header {
     grid-row: 6 / 7;
     border: #FF7043 solid 5px;
     
+}
+.project1 p {
+    color: lightgray;
 }
 .project1 h1 {
     padding: 5px 5px 5px 5px;
@@ -118,8 +138,42 @@ div header {
     border: #FF7043 solid 5px;
     
 }
+.project2 p {
+    color: lightgray;
+    font-size: 20px;
+    padding: 40px 5px 20px 5px;
+}
+#reveal-pain {
+    margin-top: 30px;
+    margin-left: 150px;
+    padding: 10px 20px 10px 20px;
+    background-color: #F44336;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#reveal-pain:hover {
+    animation: shake 0.8s infinite;
+    background-color: #8B0000;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-3px, -3px); }
+    40% { transform: translate(3px, -3px); }
+    60% { transform: translate(-3px, 3px); }
+    80% { transform: translate(3px, 3px); }
+    100% { transform: translate(0, 0); }
+}
 footer {
     background-color: rgb(104, 8, 5);
-    grid-column: 2 / 7;
+    grid-column: 1 / 8;
     grid-row: 7 / 9;
+}
+footer p {
+    color: lightgray;
 }

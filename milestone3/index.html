@@ -14,17 +14,17 @@
         </header>
 
         <nav class="left-nav"> 
-            <a href="index.html"><img src = "Images/home button cropped.png" alt="homebutton" width="120px" height="120px"></a>
-            <a href="project1.html">projects</a>
-            <a href="about.html">about</a>
-            <a href="community.html">community</a>
+            <a href="index.html"><img src = "Images/home button cropped.png" alt="homebutton" class="nav-img" ></a>
+            <a href="project1.html"><img  src = "Images/projects.png" alt="projects" class="nav-img" ></a>
+            <a href="about.html"><img  src = "Images/about.png" alt="about" class="nav-img" ></a>
+            <a href="community.html"><img  src = "Images/community.png" alt="community" class="nav-img" ></a>
         </nav>
 
         <nav class="right-nav"> 
-            <a href="partners.html">partners</a>
-            <a href="careers.html">careers</a>
-            <a href="content.html">content</a>
-            <a href="merch.html">merch</a>
+            <a href="partners.html"><img src = "Images/partners.png" alt="partners" class="nav-img" ></a>
+            <a href="careers.html"><img src = "Images/careers.png" alt="careers" class="nav-img" ></a>
+            <a href="content.html"><img src = "Images/news.png" alt="news" class="nav-img" ></a>
+            <a href="merch.html"><img src = "Images/merch.png" alt="merch" class="nav-img" ></a>
 
         </nav>
 
@@ -38,7 +38,7 @@
         </div>
 
         <div class="banner">
-            <img src = "Images/changethislater.png" alt="banner" width="1460px" height="360px">
+            <img src = "Images/changethislater.png" alt="banner" width="100%" height="400px">
         </div>
 
         <div class="project1">
@@ -49,11 +49,12 @@
 
         </div>
 
-        <div class="project2">
-            <header>Domestic Terrorism Ant Simulator</header>
-            <a href="project2.html">dtas</a>
-
+        <div class="project2" id="fact-box">
+            <header>Did You Know?</header>
+            <p id="pain-fact">Press the button to reveal suffering.</p>
+            <button id="reveal-pain">Reveal More Pain</button>
         </div>
+        
 
         <div class="description">
             <header>Company Description</header>
@@ -72,6 +73,30 @@
 
         </footer>
     </div>
+    <script>
+        const painFacts = [
+            "Our average player screams 3.7 times per level. That’s a record we're proud of.",
+            "One tester bit through their keyboard. Twice.",
+            "We removed the tutorial to heighten despair.",
+            "The difficulty slider only goes up.",
+            "Each time you fail, we get stronger.",
+            "Pain is temporary. Our checkpoints are not.",
+            "If you're not crying by level 3, you're not trying.",
+            "One level was designed in a trance state. No one remembers making it.",
+            "Difficulty settings: 'No', 'Please No', and 'You Asked for This'.",
+            "The pause button doesn't work. Intentionally."
+        ];
+    
+        const factBox = document.getElementById("pain-fact");
+        const revealButton = document.getElementById("reveal-pain");
+    
+        revealButton.addEventListener("click", () => {
+            const randomIndex = Math.floor(Math.random() * painFacts.length);
+            factBox.textContent = painFacts[randomIndex];
+        });
+    </script>
+    
+
     
 </body>
 </html>
