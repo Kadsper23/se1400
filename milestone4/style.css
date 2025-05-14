@@ -1,0 +1,274 @@
+* {
+    color: azure;
+    box-sizing: border-box;
+}
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 120px 500px 420px 500px 120px 1fr;
+    grid-template-rows: 120px 360px 180px 340px 70px 390px 40px 100px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+#wrapper-construction {
+    display: grid;
+    grid-template-columns: 1fr 120px 500px 420px 500px 120px 1fr;
+    grid-template-rows: 120px 360px 180px 340px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+body {
+    background-color: #0A0A0A;
+    
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #FF7043;
+    grid-column: 2 / 3;
+    grid-row: 2 / 7;
+} 
+.left-nav {
+    grid-column: 1 / 3;
+    grid-row: 2 / 7;
+    background-color: #1F2833;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.right-nav {
+    grid-column: 6 / 8;
+    grid-row: 2 / 7;
+    background-color: #1F2833;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.nav-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+p {
+    text-align: center;
+}
+div p {
+    padding: 1px 10px 1px 10px;
+}
+h1 {
+    color: black;
+    font-family: georgia;
+    font-size: 50px;
+    text-align: center;
+}
+a:link {
+    color : #8B0000;
+    text-decoration: none;
+
+}
+header {
+    background-color: #F44336;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: georgia;
+    font-size: 30px;
+    grid-column: 3 / 6;
+    grid-row: 1 / 2;
+}
+div header {
+    margin: 5px;
+}
+.logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    box-shadow: 0 0 20px #C62A2A;
+}
+.reverselogo {
+    grid-column: 7 / 8;
+    grid-row: 1 / 2;
+    box-shadow: 0 0 20px #C62A2A;
+}
+.banner {
+    background-color: #C62A2A;
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.description {
+    background-color: #0A0A0A;
+    margin-left: 40px;
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    border: #FF7043 solid 5px;
+    box-shadow: 0 0 20px #C62A2A;
+    
+}
+.description p {
+    color: lightgray;
+}
+.nav-img:hover {
+    animation: shake 0.8s infinite;
+  }
+.motto {
+    margin-right: 40px;
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+    border: #FF7043 solid 5px;
+    box-shadow: 0 0 20px #C62A2A;
+   
+}
+.motto p {
+    color: lightgray;
+    font-size: 20px;
+    padding: 80px 20px 40px 20px;
+}
+.project1 {
+
+    margin-left: 40px;
+    margin-bottom: 40px;
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+    border: #FF7043 solid 5px;
+    box-shadow: 0 0 20px #C62A2A;
+    
+}
+.project1 a {
+    padding-left: 5px;
+}
+.project1 p {
+    color: lightgray;
+}
+.project1 h1 {
+    padding: 5px 5px 5px 5px;
+}
+.project2 {
+    margin-right: 40px;
+    margin-bottom: 40px;
+    grid-column: 5 / 6;
+    grid-row: 6 / 7;
+    border: #FF7043 solid 5px;
+    box-shadow: 0 0 20px #C62A2A;
+    
+}
+.project2 p {
+    color: lightgray;
+    font-size: 20px;
+    padding: 40px 5px 20px 5px;
+}
+#reveal-pain {
+    margin-top: 30px;
+    margin-left: 150px;
+    padding: 10px 20px 10px 20px;
+    background-color: #F44336;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#reveal-pain:hover {
+    animation: shake 0.8s infinite;
+    background-color: #8B0000;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-3px, -3px); }
+    40% { transform: translate(3px, -3px); }
+    60% { transform: translate(-3px, 3px); }
+    80% { transform: translate(3px, 3px); }
+    100% { transform: translate(0, 0); }
+}
+#origin {
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+    background-color: #1F2833;
+    text-align: center;
+    box-shadow: 0 0 10px #FF7043;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+#origin h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #F44336;
+}
+#origin p {
+    color: lightgray;
+    font-size: 18px;
+    line-height: 1.5;
+}
+#construction {
+    grid-row: 2 / 3;
+    grid-column: 3 / 6;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    padding-left: 20px; /* Add space on the left */
+    padding-right: 20px; /* Optional: keep balance */
+}
+footer {
+    background-color: #780d07;
+    grid-column: 1 / 8;
+    grid-row: 7 / 9;
+}
+footer p {
+    color: lightgray;
+}
+@media screen and (max-width: 768px) {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* This ensures consistent spacing between boxes */
+    }
+    header, nav, .left-nav, .right-nav, .banner, .description, .motto, .project1, .project2, footer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .logo, .reverselogo {
+        display: none;
+    }
+    .banner {
+        display: none;
+    }
+    .motto, .description, .project1, .project2 {
+        margin: 0px;
+        width: 90%; /* adds breathing space */
+    }
+    .project1 {
+        margin: 0px;
+    }
+    .project1 img {
+        width: 100%;
+        height: auto;
+        padding-right: 10px;
+    }
+    .project2 button {
+        margin-bottom: 0px;
+    }
+    header {
+        
+    }
+}
