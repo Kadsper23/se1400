@@ -16,6 +16,13 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+#wrapper-about {
+    display: grid;
+    grid-template-columns: 1fr 120px 500px 420px 500px 120px 1fr;
+    grid-template-rows: 120px 360px 360px 360px 380px 380px 40px 100px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
 body {
     background-color: #0A0A0A;
     
@@ -217,6 +224,73 @@ div header {
     font-size: 18px;
     line-height: 1.5;
 }
+#first-game {
+    grid-column: 3 / 6;
+    grid-row: 3 / 4;
+    background-color: #1F2833;
+    text-align: center;
+    box-shadow: 0 0 10px #FF7043;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#first-game h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #F44336;
+}
+#first-game p {
+    color: lightgray;
+    font-size: 18px;
+    line-height: 1.5;
+}
+#trials {
+    grid-column: 3 / 6;
+    grid-row: 4 / 5;
+    background-color: #1F2833;
+    text-align: center;
+    box-shadow: 0 0 10px #FF7043;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+}
+#h3 {
+    font-size: 24px;
+    color: #F44336;
+    text-align: center;
+}
+#trials a:link {
+    color: #F44336;
+    text-decoration: none;
+}
+#trials h2 {
+    font-size: 32px;
+    margin-bottom: 7px;
+    color: #F44336;
+}
+#trials p {
+    color: lightgray;
+    font-size: 18px;
+    line-height: 1.5;
+}
+#future {
+    grid-column: 3 / 6;
+    grid-row: 5 / 7;
+    background-color: #1F2833;
+    text-align: center;
+    box-shadow: 0 0 10px #FF7043;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#future h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #F44336;
+}
+#future p {
+    color: lightgray;
+    font-size: 18px;
+    line-height: 1.5;
+}
 #construction {
     grid-row: 2 / 3;
     grid-column: 3 / 6;
@@ -227,6 +301,102 @@ div header {
     padding-left: 20px; /* Add space on the left */
     padding-right: 20px; /* Optional: keep balance */
 }
+#ritual-wrapper {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    background-color: #0a0a0a;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 20px crimson;
+    border: 4px solid crimson;
+    border-radius: 20px;
+  }
+  
+  
+  #pentagram {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+ 
+  .candle {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  #candle1 { top: 20px; left: 370px; }
+  #candle2 { top: 230px; left: 670px; }
+  #candle3 { top: 600px; left: 560px; }
+  #candle4 { top: 610px; left: 180px; }
+  #candle5 { top: 230px; left: 60px; }
+  
+  .candle.lit {
+    content: url("Images/candleontrans.gif");
+    transform: scale(1.1);
+    animation: candleGlow 1.5s infinite alternate ease-in-out;
+  }
+  
+  @keyframes candleGlow {
+    0% { filter: drop-shadow(0 0 2px crimson); }
+    100% { filter: drop-shadow(0 0 10px crimson); }
+  }
+  
+ 
+  #secret-box {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-40%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    border: 2px solid crimson;
+    color: white;
+    opacity: 0;
+    transition: all 3s ease;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  
+  #secret-box a {
+    color: crimson;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    transition: color 0.3s ease;
+  }
+  #secret-box a:hover {
+    color: #ffdddd;
+  }
+  
+  #secret-box.revealed {
+    opacity: 1;
+    bottom: 200px;
+    animation: floatUp 6s ease-in-out forwards;
+  }
+  
+  @keyframes floatUp {
+    0% {
+      transform: translateX(-50%) translateY(0);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-20px);
+    }
+  }
+  
+  
 footer {
     background-color: #780d07;
     grid-column: 1 / 8;
