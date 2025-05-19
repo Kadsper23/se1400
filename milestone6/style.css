@@ -1,5 +1,5 @@
 * {
-    color: azure;
+    color: #0A0A0A;
     box-sizing: border-box;
 }
 #wrapper {
@@ -114,6 +114,15 @@ div header {
     width: 100%;
     height: auto;
 }
+.banner-project {
+    grid-column: 3 / 6;
+    grid-row: 2 / 3;
+    background-color: #C62A2A;
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .banner img {
     width: 100%;
     height: auto;
@@ -141,7 +150,7 @@ div header {
     grid-row: 4 / 5;
     border: #FF7043 solid 5px;
     box-shadow: 0 0 20px #C62A2A;
-   
+    
 }
 .motto p {
     color: lightgray;
