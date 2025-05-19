@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masochism Inc.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Masochism Inc.</h1>
+
+        </header>
+
+        <nav class="left-nav"> 
+            <a href="index.html"><img src = "Images/home button cropped.png" alt="homebutton" class="nav-img" ></a>
+            <a href="project1.html"><img  src = "Images/projects.png" alt="projects" class="nav-img" ></a>
+            <a href="about.html"><img  src = "Images/about.png" alt="about" class="nav-img" ></a>
+            <a href="community.html"><img  src = "Images/community.png" alt="community" class="nav-img" ></a>
+        </nav>
+
+        <nav class="right-nav"> 
+            <a href="partners.html"><img src = "Images/partners.png" alt="partners" class="nav-img" ></a>
+            <a href="careers.html"><img src = "Images/careers.png" alt="careers" class="nav-img" ></a>
+            <a href="news.html"><img src = "Images/news2.png" alt="news" class="nav-img" ></a>
+            <a href="merch.html"><img src = "Images/merch.png" alt="merch" class="nav-img" ></a>
+
+        </nav>
+
+        <div class="logo">
+            <a href="index.html"><img src = "Images/flail.jpg" alt="logo" width="120px" height="120px"></a>
+        </div>
+
+        <div class="reverselogo">
+            <a href="index.html"><img src = "Images/reverseflail.jpg" alt="logo" width="120px" height="120px"></a>
+
+        </div>
+
+        <div class="banner">
+            <img src ="Images/banner.png" alt="banner">
+        </div>
+
+        <div class="project1">
+            <header>Cryptic Cabin</header>
+            <p>Click the image to learn more about the project.</p>
+            <a href="project1.html"><img src = "Images/Cabin from Sky.png" alt="png" width="440px" height="240px"></a>
+            
+
+        </div>
+
+        <div class="project2" id="fact-box">
+            <header>Did You Know?</header>
+            <p id="pain-fact">Press the button to reveal suffering.</p>
+            <button id="reveal-pain">Reveal More Pain</button>
+        </div>
+        
+
+        <div class="description">
+            <header>Company Description</header>
+            <p>At Masochism Inc., we don’t make games — we forge ordeals. Born from the darkest depths of digital torment, our mission is to craft experiences so grueling, so merciless, that only the truly obsessed will dare to endure them. Every level is a labyrinth of suffering, every enemy a cruel joke at your expense, and every victory? A hard-earned hallucination. We are the cult of challenge, the temple of trial, and the last stop before sanity slips away. Because here at Masochism Inc., if you’re not screaming, you’re not trying.</p>
+
+        </div>
+
+        <div class="motto">
+            <header>Our Motto</header>
+            <p>"Masochism Inc. — If You're Not Screaming, You're Not Trying."</p>
+
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Masochism Inc. All rights reserved.</p>
+
+        </footer>
+    </div>
+    <script>
+        const painFacts = [
+            "Our average player screams 3.7 times per level. That’s a record we're proud of.",
+            "One tester bit through their keyboard. Twice.",
+            "We removed the tutorial to heighten despair.",
+            "The difficulty slider only goes up.",
+            "Each time you fail, we get stronger.",
+            "Pain is temporary. Our checkpoints are not.",
+            "If you're not crying by level 3, you're not trying.",
+            "One level was designed in a trance state. No one remembers making it.",
+            "Difficulty settings: 'No', 'Please No', and 'You Asked for This'.",
+            "The pause button doesn't work. Intentionally."
+        ];
+    
+        const factBox = document.getElementById("pain-fact");
+        const revealButton = document.getElementById("reveal-pain");
+    
+        revealButton.addEventListener("click", () => {
+            const randomIndex = Math.floor(Math.random() * painFacts.length);
+            factBox.textContent = painFacts[randomIndex];
+        });
+    </script>
+    
+
+    
+</body>
+</html>
