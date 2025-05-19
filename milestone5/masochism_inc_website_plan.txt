@@ -1,0 +1,81 @@
+
+Masochism Inc. Website Plan
+===========================
+
+1. Sitemap
+----------
+Home
+├── Games
+│   ├── Featured Game Page (individual page per game)
+│   ├── Older Game Pages
+├── About Us
+│   ├── Our Mission
+│   ├── The Founding Legend
+│   ├── The Cult Today
+├── Hall of the Broken
+│   ├── Top Survivors
+│   ├── Gallery of the Fallen
+├── Join the Cult
+│   ├── Jobs
+│   ├── Community
+│   ├── Recruitment Challenge
+├── News / Devlogs
+│   ├── Patch Notes
+│   ├── Tournaments / Events
+├── Partners and Rivals
+│   ├── XSC (Respect)
+│   ├── Alright Games (Tolerated)
+├── Contact Us
+├── Merch Store (optional)
+
+2. Homepage Wireframe
+---------------------
+- Banner: Blood Background, “MASOCHISM INC.” large
+- Nav Bar: Home | Games | About | Hall of the Broken | Join the Cult | News
+- Hero: “Where Suffering is the Only Currency” + “Enter the Pain” button
+- Latest Games: 3 tiles with screenshots, titles, “Try to Survive” buttons
+- Hall of the Broken Preview: Top 5 players, survivor quote
+- About Preview: “Forged in Suffering. Perfected by Agony.” + “Learn Our Ways”
+- Footer: Partner logos (XSC, Alright Games), Terms | Privacy | Contact
+
+3. Games Page Wireframe
+------------------------
+- Banner: “Survive If You Can”
+- Featured Game card: large screenshot, title, “Face It” button
+- Games grid: thumbnails, brutality level (1–5 skulls), “Suffer Now”
+- Quote of the Day: “Pain is the only language they speak.”
+
+4. About Us Page Wireframe
+---------------------------
+- Banner: “Forged in Suffering”
+- Mission: “We Do Not Make Games. We Make Trials.” + manifesto paragraph
+- Founding Legend: origin story, cracked stone portraits of founders
+- The Cult Today: stats (players broken, controllers destroyed)
+
+5. Hall of the Broken Page Wireframe
+------------------------------------
+- Banner: “The Few Who Survived”
+- Top Survivors board (#1–#10)
+- Gallery of the Fallen: screenshots of rage-quits, broken hardware
+- CTA: “Think you can survive?” -> Join the Cult
+
+6. Join the Cult Page Wireframe
+--------------------------------
+- Banner: “Only the Worthy Need Apply”
+- Job Postings: “Game Tester – Must Enjoy Suffering”
+- Community: Discord link, challenge sign-up
+- Recruitment Challenge: “Beat ‘Chamber of a Thousand Deaths’ on Hard” + proof submission
+
+7. News / Devlog Page Wireframe
+--------------------------------
+- Banner: “The World Must Know”
+- Devlog entries: title, date, description of cruelty updates
+- Upcoming events: tournaments, release countdowns
+
+Additional Suggestions
+----------------------
+- Add an FAQ or Support page for troubleshooting (for the truly broken).
+- Ensure mobile-responsive design for warriors on any device.
+- Implement analytics to track survivor conversion rates.
+- Consider a Media page for trailers and developer diaries.
+- SEO: brutal keyword optimization (e.g., “hardcore games,” “extreme difficulty”).

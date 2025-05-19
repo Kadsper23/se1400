@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summoning Ritual</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ritual-wrapper">
+    <img id="pentagram" src="images/pentagram.png" alt="Pentagram" />
+
+    <img class="candle" id="candle1" src="images/candle.png" alt="Candle 1" />
+    <img class="candle" id="candle2" src="images/candle.png" alt="Candle 2" />
+    <img class="candle" id="candle3" src="images/candle.png" alt="Candle 3" />
+    <img class="candle" id="candle4" src="images/candle.png" alt="Candle 4" />
+    <img class="candle" id="candle5" src="images/candle.png" alt="Candle 5" />
+
+    <div id="secret-box">
+      <a href="secret.html">Enter the Forbidden Chamber</a>
+    </div>
+
+    <audio id="chant-audio" src="assets/chant.mp3"></audio>
+  </div>
+
+  <script>
+    const candles = document.querySelectorAll('.candle');
+    const audio = document.getElementById('chant-audio');
+    const secretBox = document.getElementById('secret-box');
+    const litCandles = new Set();
+
+    candles.forEach(candle => {
+      candle.addEventListener('click', () => {
+        if (!candle.classList.contains('lit')) {
+          candle.classList.add('lit');
+          litCandles.add(candle.id);
+        }
+
+        if (litCandles.size === 5) {
+          revealSecret();
+        }
+      });
+    });
+
+    function revealSecret() {
+      audio.play();
+      secretBox.classList.add('revealed');
+    }
+  </script>
+</body>
+</html>
